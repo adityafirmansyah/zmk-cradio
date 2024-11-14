@@ -39,11 +39,6 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
         jk_esc_combo {
             timeout-ms = <50>;
             key-positions = <16 17>;
