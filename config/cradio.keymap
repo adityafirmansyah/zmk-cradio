@@ -39,10 +39,30 @@
 
     combos {
         compatible = "zmk,combos";
+        esc_combo {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
         jk_esc_combo {
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp ESC>;
+        };
+        tab_combo {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp TAB>;
+        };
+        backspace_combo {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp BSPC>;
+        };
+        enter_combo {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp ENTER>;
         };
     };
 
@@ -77,7 +97,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt LEF TAB &kp SPACE      &kp ENTER  &lt RIG BSPC
+                                            &lt RIG TAB &kp SPACE      &kp ENTER  &lt LEF BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
