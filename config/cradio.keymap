@@ -27,6 +27,12 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+
+        lt {
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+        };
+
     };
 
     conditional_layers {
@@ -64,11 +70,6 @@
             key-positions = <28 29>;
             bindings = <&kp ENTER>;
         };
-    };
-
-    &lt {
-        tapping-term-ms = <200>;
-        quick-tap-ms = <180>;
     };
 
     keymap {
